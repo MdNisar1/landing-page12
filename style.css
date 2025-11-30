@@ -38,7 +38,17 @@ header {
 .grid { display: grid; gap: 16px; }
 .grid-3 { grid-template-columns: repeat(3, 1fr); }
 .card {
-  background: var(--card); border: 1px solid #1f2937; border-radius: 12px; padding: 16px;
+  /* height: 100%; */
+  background: var(--card); border: 1px solid #1f2937;
+  border-radius: 12px;
+  padding: 16px;
+}
+.card img {
+  height:100% ; border-radius: 8px; margin-bottom: 12px;
+  object-fit: cover;
+  height: 400px;
+  width: 100%;
+
 }
 .card h3 { margin-top: 0; }
 .card p { color: var(--muted); }
@@ -67,10 +77,4 @@ footer {
   .nav-links.open { display: flex; flex-direction: column; }
   .grid-3 { grid-template-columns: 1fr; }
   .hero h1 { font-size: 1.8rem; }
-}
-.section grid grid-3 .card img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 12px;
 }
